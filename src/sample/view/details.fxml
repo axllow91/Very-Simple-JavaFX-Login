@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="470.0" prefWidth="700.0" style="-fx-background-color: #8e24aa;" stylesheets="@../resources/assets/details_style.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.DetailsController">
+   <children>
+      <Label fx:id="detailsWelcomeLabel" alignment="CENTER" layoutX="509.0" layoutY="24.0" prefHeight="28.0" prefWidth="161.0" text="Welcome..." textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Constantia" size="20.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="23.0" layoutY="110.0" prefHeight="169.0" prefWidth="640.0" style="-fx-background-color: #ffffffff; fx-border-color: #7857f4;" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0">
+         <children>
+            <VBox layoutX="168.0" layoutY="-1.0" prefHeight="169.0" prefWidth="470.0" spacing="10.0">
+               <children>
+                  <Label fx:id="firstNameLabel" style="-fx-text-fill: #a44242;" text="First Name:" textFill="#d30e0e">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets left="30.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="lastNameLabel" style="-fx-text-fill: #a44242;" text="Last Name:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets left="30.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="ageLabel" style="-fx-text-fill: #a44242;" text="Age:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets left="30.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="professionLabel" style="-fx-text-fill: #a44242;" text="Profession:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets left="30.0" />
+                     </VBox.margin>
+                  </Label>
+               </children></VBox>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/assets/default-avatar-ginger-guy.png" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="233.0" layoutY="288.0" prefHeight="161.0" prefWidth="435.0" style="-fx-background-color: #ffffff;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Label alignment="CENTER" layoutX="142.0" layoutY="8.0" prefHeight="25.0" prefWidth="154.0" style="-fx-text-fill: #a44242; -fx-border-style: dashed;" text="How to find me" textFill="#a44242" AnchorPane.leftAnchor="142.0" AnchorPane.rightAnchor="142.0">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="14.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/assets/icons8-secured-letter-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="14.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/assets/icons8-website-64.png" />
+               </image>
+            </ImageView>
+            <Separator layoutY="40.0" prefHeight="9.0" prefWidth="437.0" style="-fx-background-color: #7857f4;" />
+            <Hyperlink layoutX="50.0" layoutY="69.0" onAction="#onEmail" text="www.gmail.com" textFill="#ab0d0d" />
+            <Hyperlink layoutX="50.0" layoutY="98.0" onAction="#onGoogle" text="www.google.com" textFill="#ab0d0d" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
